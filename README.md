@@ -24,9 +24,11 @@ Access token:
 
 Maven goal:
 
-`	mvn sonar:sonar \
-	  -Dsonar.host.url=http://127.0.0.1:9000`` \
-	  -Dsonar.login=7c7b358a089ccdc5367d6af77985ba0eac8ceb7f`
+```
+mvn sonar:sonar
+-Dsonar.host.url=http://sonarqube:9000
+-Dsonar.login=7c7b358a089ccdc5367d6af77985ba0eac8ceb7f
+```
 
 ### Jenkins
 
