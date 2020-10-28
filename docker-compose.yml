@@ -1,0 +1,24 @@
+version: '3.3'
+services:
+  sonarqube:
+    build: sonarqube
+    ports:
+      - '9000:9000'
+    networks:
+      - sowfware_quality_network
+    volumes:
+      - './volumes/sonarqube/conf:/opt/sonarqube/conf'
+      - './volumes/sonarqube/data:/opt/sonarqube/data'
+  jenkins:
+    build: jenkins
+    ports:
+      - '8080:8080'
+      - '50000:50000'
+    networks:
+      - sowfware_quality_network
+    depends_on:
+      - sonarqube
+#    volumes:
+#      - './volumes/jenkins:/var/jenkins_home'
+networks:
+  sowfware_quality_network:
