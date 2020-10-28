@@ -14,8 +14,9 @@ Administrator console is available to the following url:
 	
 Administrator credentials:
 
-`USERNAME: admin
-PASSWORD: admin`
+`USERNAME: admin`
+
+`PASSWORD: admin`
 
 Access token:
 
@@ -39,15 +40,12 @@ Admin console at following url:
 	
 Jenkins user:
 
-`USERNAME: vacammar
-PASSWORD: vacammar`
+`USERNAME: admin`
+
+`PASSWORD: admin`
 
 ## Run infrastructure
 
 `docker-compose up --build`
 
 with **-d** option run all in detached mode
-
-## Notes
-
-`<MACHINE_IP>`: for Windows and Unix is localhost or 127.0.0.1, for OSX is the ip assigned to docker-machine.
