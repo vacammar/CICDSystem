@@ -54,6 +54,7 @@ For proxy definition, mirrors or others settings update [settings.xml](jenkins/s
 
 - SonarQube Scanner for Jenkins
 - Sonar Quality Gates Plugin
+- Deploy to container Plugin
 
 #### Define credentials
 
